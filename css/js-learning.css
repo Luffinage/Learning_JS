@@ -1,0 +1,12 @@
+.js-learning {
+  background: #fff;
+  padding: 10px;
+  border-radius: 20px;
+  width: 100%;
+  transition: all 1s;
+  &:hover {
+    color: #fff;
+    background: #000;
+    cursor: pointer;
+  }
+}

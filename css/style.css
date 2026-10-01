@@ -1,0 +1,16 @@
+@import url(/css/reset.css);
+@import url(/css/header.css);
+@import url(/css/aside.css);
+@import url(/css/main.css);
+@import url(/css/footer.css);
+@import url(/css/js-learning.css);
+* {
+  box-sizing: border-box;
+}
+body {
+  background: #bbd1dd;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}

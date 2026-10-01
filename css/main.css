@@ -1,0 +1,8 @@
+main {
+  background: #3f7cac;
+  border: 1px solid #000;
+  height: 70vh;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+}

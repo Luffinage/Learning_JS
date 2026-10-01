@@ -1,0 +1,30 @@
+header {
+  background: #fde74c;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  border: 1px solid #000;
+}
+.header__item {
+  background: #fff;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 1s;
+  path {
+    transition: all 1s;
+  }
+}
+
+.header__item:hover {
+  cursor: pointer;
+  transform: rotate(360deg) scale(90%);
+  background: #000;
+  path {
+    /* transition: all 1s; */
+    fill: #fff;
+  }
+}
