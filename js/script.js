@@ -29,9 +29,5 @@ function clickBite() {
 // window.open("", "_self", "");
 // window.close();
 
-const category = "toys";
-
-console.log("https://someurl/com/" + category);
-
 const user = "Sasha";
 alert(`Привет, ${user}! Ты молодец и у тебя всё получится!`);
