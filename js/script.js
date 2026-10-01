@@ -34,4 +34,4 @@ const category = "toys";
 console.log("https://someurl/com/" + category);
 
 const user = "Sasha";
-alert(`Привет, ${user}!`);
+alert(`Привет, ${user}! Ты молодец и у тебя всё получится!`);
