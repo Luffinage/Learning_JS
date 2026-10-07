@@ -1,8 +1,9 @@
 "use strict";
-let bites = document.querySelectorAll(".header__item");
-let openedWindow;
-const hate = "вонючий";
-const hate2 = "пидор";
+
+const user = "Sasha";
+alert(`Привет, ${user}! Ты молодец и у тебя всё получится!`);
+
+let bites = document.querySelectorAll(".header__item__1");
 const answers = [];
 
 bites.forEach(function (bite) {
@@ -21,13 +22,10 @@ function clickBite() {
     window.close();
   } else {
     alert("Sure?");
-    alert("Ты " + hate + " " + hate2);
+    alert("Ты " + answers[0] + " " + answers[1]);
     window.open("index.html", "_blank", "");
     window.close();
   }
 }
 // window.open("", "_self", "");
 // window.close();
-
-const user = "Sasha";
-alert(`Привет, ${user}! Ты молодец и у тебя всё получится!`);
