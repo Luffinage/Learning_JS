@@ -80,8 +80,10 @@ function askFilms() {
     alert("Просмотрено довольно мало фильмов");
   } else if (numberOfFilms >= 10 && numberOfFilms < 30) {
     alert("Вы - классический зритель");
-  } else {
+  } else if (numberOfFilms > 30) {
     alert("ВЫ КИНОМАН!");
+  } else {
+    console.log("error");
   }
 
   const personalMovieDB = {
@@ -93,24 +95,22 @@ function askFilms() {
   };
 
   for (let i = 0; i < 2; i++) {
-    for (let j = 0; j < 2; j++) {
-      let a = prompt(`Один их последних просмотренных фильмов`, `logan ${++i}`);
-      let b = prompt("На сколько вы его оцените?", `9.${i}`);
-      if (
-        a != " " &&
-        a != null &&
-        a.length < 50 &&
-        b != " " &&
-        b != null &&
-        b.length < 50
-      ) {
-        alert("СПАСИБО!");
-        personalMovieDB.movies[a] = b;
-      } else {
-        alert("Отвечайте на вопросы честно, пожалуйста!");
-
-        --j;
-      }
+    const a = prompt(`Один их последних просмотренных фильмов`, ``);
+    const b = prompt("На сколько вы его оцените?", ``);
+    if (
+      a != null &&
+      b != null &&
+      a != "" &&
+      b != "" &&
+      a.length < 50 &&
+      b.length < 50
+    ) {
+      alert("СПАСИБО!");
+      personalMovieDB.movies[a] = b;
+    } else {
+      i--;
+      console.log(i);
+      alert("Отвечайте на вопросы честно, пожалуйста!");
     }
   }
 
